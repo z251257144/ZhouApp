@@ -19,10 +19,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="riw-a0-SBf">
-                    <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJj-2W-iD2">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="EeF-rf-Utc"/>
+                            </constraints>
                             <state key="normal" title="直接使用FlutterViewController"/>
                             <connections>
                                 <action selector="showFlutterViewController:" destination="-1" eventType="touchUpInside" id="SVI-pF-QMh"/>

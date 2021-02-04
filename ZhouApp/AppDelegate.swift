@@ -12,13 +12,10 @@ import Flutter
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    ///初始化Flutter引擎
-    lazy var engine:FlutterEngine = FlutterEngine.init(name: "zhou");
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        self.engine.run()
+        FlutterManager.default.initFlutter()
         
         return true
     }

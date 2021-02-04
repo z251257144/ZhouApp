@@ -9,6 +9,10 @@ import UIKit
 import Flutter
 
 class FlutterTestViewController: UIViewController {
+    
+    //初始化的方法
+    var channel:FlutterEventChannel?
+    var eventSink:FlutterEventSink?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +32,29 @@ class FlutterTestViewController: UIViewController {
     */
 
     @IBAction func showFlutterViewController(_ sender: Any) {
-        let engine = (UIApplication.shared.delegate as! AppDelegate).engine
-        let controller = FlutterViewController.init(engine: engine, nibName: nil, bundle: nil);
-        controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true, completion: nil)
+        let engine = FlutterManager.default.engine
+        let flutterController = FlutterViewController.init(engine: engine, nibName: nil, bundle: nil);
+        flutterController.modalPresentationStyle = .fullScreen
+        
+        self.channel = FlutterEventChannel(name: "com.pages.flutter", binaryMessenger: flutterController as! FlutterBinaryMessenger)
+                
+        self.channel?.setStreamHandler(self)
+        
+        self.navigationController?.pushViewController(flutterController, animated: true)
     }
+}
+
+extension FlutterTestViewController: FlutterStreamHandler
+{
+    //ios 主动给flutter 发送消息回调方法
+    func onListen(withArguments arguments: Any?, eventSink events: @escaping FlutterEventSink) -> FlutterError? {
+        self.eventSink = events
+        return nil
+    }
+    
+    func onCancel(withArguments arguments: Any?) -> FlutterError? {
+        return nil
+    }
+    
+    
 }
