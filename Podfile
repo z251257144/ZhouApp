@@ -1,4 +1,4 @@
-source 'https://github.com/CocoaPods/Specs.git'
+# source 'https://github.com/CocoaPods/Specs.git'
 
 use_frameworks!
 
@@ -18,4 +18,13 @@ target :ZhouApp do
   pod 'MJRefresh'
 
   pod 'ZMBaseLib', :git => 'https://git.dev.tencent.com/z251257144/ZMBaseLibSwift.git'
+  
+  post_install do |installer|
+   installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+     config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
+    end
+   end
+  end
+  
 end

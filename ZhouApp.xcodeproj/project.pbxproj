@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5820204825CA8BEA00A85BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820204725CA8BEA00A85BAF /* AppDelegate.swift */; };
-		5820204A25CA8BEA00A85BAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820204925CA8BEA00A85BAF /* SceneDelegate.swift */; };
 		5820204C25CA8BEA00A85BAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820204B25CA8BEA00A85BAF /* HomeViewController.swift */; };
 		5820204F25CA8BEA00A85BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5820204D25CA8BEA00A85BAF /* Main.storyboard */; };
 		5820205125CA8BEC00A85BAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5820205025CA8BEC00A85BAF /* Assets.xcassets */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		5820204425CA8BEA00A85BAF /* ZhouApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhouApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5820204725CA8BEA00A85BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5820204925CA8BEA00A85BAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5820204B25CA8BEA00A85BAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5820204E25CA8BEA00A85BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5820205025CA8BEC00A85BAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				5820204725CA8BEA00A85BAF /* AppDelegate.swift */,
-				5820204925CA8BEA00A85BAF /* SceneDelegate.swift */,
 				582020A325CBB20600A85BAF /* Flutter */,
 				5820209225CB927100A85BAF /* Root */,
 				5820204D25CA8BEA00A85BAF /* Main.storyboard */,
@@ -145,7 +142,7 @@
 			buildConfigurationList = 5820205825CA8BEC00A85BAF /* Build configuration list for PBXNativeTarget "ZhouApp" */;
 			buildPhases = (
 				CE06D2ABC6B9312AB1971546 /* [CP] Check Pods Manifest.lock */,
-				197B4F2CB52E69BDD766579C /* [CP-User] Run Flutter Build flutter_module Script */,
+				6DD4463FEC0A941012190E4F /* [CP-User] Run Flutter Build flutter_module Script */,
 				5820204025CA8BEA00A85BAF /* Sources */,
 				5820204125CA8BEA00A85BAF /* Frameworks */,
 				5820204225CA8BEA00A85BAF /* Resources */,
@@ -208,22 +205,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		197B4F2CB52E69BDD766579C /* [CP-User] Run Flutter Build flutter_module Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../flutter_module/.metadata",
-				"${SRCROOT}/../flutter_module/.ios/Flutter/App.framework/App",
-				"${SRCROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework/Flutter",
-				"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh",
-			);
-			name = "[CP-User] Run Flutter Build flutter_module Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
-		};
 		5ADE812C26DBE8AE1387BD29 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +221,22 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZhouApp/Pods-ZhouApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6DD4463FEC0A941012190E4F /* [CP-User] Run Flutter Build flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../flutter_module/.metadata",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		CE06D2ABC6B9312AB1971546 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -275,7 +272,6 @@
 				5820209825CB93A100A85BAF /* HomeMenuModel.swift in Sources */,
 				5820209B25CB979000A85BAF /* MenuTableViewCell.swift in Sources */,
 				5820204825CA8BEA00A85BAF /* AppDelegate.swift in Sources */,
-				5820204A25CA8BEA00A85BAF /* SceneDelegate.swift in Sources */,
 				5820209525CB932F00A85BAF /* HomeViewModel.swift in Sources */,
 				582020A625CBB20600A85BAF /* FlutterTestViewController.swift in Sources */,
 			);
@@ -354,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -409,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

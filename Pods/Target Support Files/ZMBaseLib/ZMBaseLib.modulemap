@@ -1,0 +1,6 @@
+framework module ZMBaseLib {
+  umbrella header "ZMBaseLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "ZMBaseLib",
+  "version": "0.1.0",
+  "summary": "A short description of ZMBaseLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://dev.tencent.com/u/z251257144/p/ZMBaseLibSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "z251257144": "zmsoul@126.com"
+  },
+  "source": {
+    "git": "https://git.dev.tencent.com/z251257144/ZMBaseLibSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "4.2",
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "resource_bundles": {
+    "ZMBaseLib": [
+      "ZMBaseLib/Assets/*.png"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Base",
+      "source_files": "ZMBaseLib/Classes/Base/*",
+      "dependencies": {
+        "Alamofire": [
+
+        ],
+        "SwiftyJSON": [
+
+        ],
+        "SDWebImage": [
+
+        ]
+      }
+    },
+    {
+      "name": "UIKitExtension",
+      "source_files": "ZMBaseLib/Classes/UIKit/*",
+      "dependencies": {
+        "MBProgressHUD": [
+
+        ]
+      }
+    },
+    {
+      "name": "FoundationExtension",
+      "source_files": "ZMBaseLib/Classes/Foundation/*",
+      "dependencies": {
+        "KeychainAccess": [
+
+        ]
+      }
+    },
+    {
+      "name": "ViewComponent",
+      "source_files": "ZMBaseLib/Classes/ViewComponent/*"
+    }
+  ],
+  "swift_version": "4.2"
+}
