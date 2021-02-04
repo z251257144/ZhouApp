@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5820204825CA8BEA00A85BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820204725CA8BEA00A85BAF /* AppDelegate.swift */; };
+		5820204A25CA8BEA00A85BAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820204925CA8BEA00A85BAF /* SceneDelegate.swift */; };
+		5820204C25CA8BEA00A85BAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820204B25CA8BEA00A85BAF /* HomeViewController.swift */; };
+		5820204F25CA8BEA00A85BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5820204D25CA8BEA00A85BAF /* Main.storyboard */; };
+		5820205125CA8BEC00A85BAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5820205025CA8BEC00A85BAF /* Assets.xcassets */; };
+		5820205425CA8BEC00A85BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5820205225CA8BEC00A85BAF /* LaunchScreen.storyboard */; };
+		5820206F25CA9BF100A85BAF /* Functions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5820206E25CA9BF100A85BAF /* Functions.plist */; };
+		5820209525CB932F00A85BAF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820209425CB932F00A85BAF /* HomeViewModel.swift */; };
+		5820209825CB93A100A85BAF /* HomeMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820209725CB93A100A85BAF /* HomeMenuModel.swift */; };
+		5820209B25CB979000A85BAF /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5820209A25CB979000A85BAF /* MenuTableViewCell.swift */; };
+		582020A625CBB20600A85BAF /* FlutterTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582020A425CBB20600A85BAF /* FlutterTestViewController.swift */; };
+		582020A725CBB20600A85BAF /* FlutterTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582020A525CBB20600A85BAF /* FlutterTestViewController.xib */; };
+		F7EAC687A21E3F9234A139D6 /* Pods_ZhouApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37E8649C95DC570CB9E0BAD /* Pods_ZhouApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5820204425CA8BEA00A85BAF /* ZhouApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhouApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5820204725CA8BEA00A85BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5820204925CA8BEA00A85BAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5820204B25CA8BEA00A85BAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5820204E25CA8BEA00A85BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5820205025CA8BEC00A85BAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5820205325CA8BEC00A85BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5820205525CA8BEC00A85BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5820206E25CA9BF100A85BAF /* Functions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Functions.plist; sourceTree = "<group>"; };
+		5820209425CB932F00A85BAF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5820209725CB93A100A85BAF /* HomeMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuModel.swift; sourceTree = "<group>"; };
+		5820209A25CB979000A85BAF /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		582020A425CBB20600A85BAF /* FlutterTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlutterTestViewController.swift; sourceTree = "<group>"; };
+		582020A525CBB20600A85BAF /* FlutterTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlutterTestViewController.xib; sourceTree = "<group>"; };
+		6F4DAA13516CED31864695DD /* Pods-ZhouApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouApp.debug.xcconfig"; path = "Target Support Files/Pods-ZhouApp/Pods-ZhouApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8F3DB0E2099A19969FC0DA6B /* Pods-ZhouApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouApp.release.xcconfig"; path = "Target Support Files/Pods-ZhouApp/Pods-ZhouApp.release.xcconfig"; sourceTree = "<group>"; };
+		F37E8649C95DC570CB9E0BAD /* Pods_ZhouApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhouApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5820204125CA8BEA00A85BAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7EAC687A21E3F9234A139D6 /* Pods_ZhouApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5820203B25CA8BEA00A85BAF = {
+			isa = PBXGroup;
+			children = (
+				5820204625CA8BEA00A85BAF /* ZhouApp */,
+				5820206D25CA9BCB00A85BAF /* Resources */,
+				5820204525CA8BEA00A85BAF /* Products */,
+				F3BB91A0595ADF22DAD0828E /* Pods */,
+				F4D8F9CCCD18EA52851ADE1A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5820204525CA8BEA00A85BAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5820204425CA8BEA00A85BAF /* ZhouApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5820204625CA8BEA00A85BAF /* ZhouApp */ = {
+			isa = PBXGroup;
+			children = (
+				5820204725CA8BEA00A85BAF /* AppDelegate.swift */,
+				5820204925CA8BEA00A85BAF /* SceneDelegate.swift */,
+				582020A325CBB20600A85BAF /* Flutter */,
+				5820209225CB927100A85BAF /* Root */,
+				5820204D25CA8BEA00A85BAF /* Main.storyboard */,
+				5820205025CA8BEC00A85BAF /* Assets.xcassets */,
+				5820205225CA8BEC00A85BAF /* LaunchScreen.storyboard */,
+			);
+			path = ZhouApp;
+			sourceTree = "<group>";
+		};
+		5820206D25CA9BCB00A85BAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5820205525CA8BEC00A85BAF /* Info.plist */,
+				5820206E25CA9BF100A85BAF /* Functions.plist */,
+			);
+			name = Resources;
+			path = ZhouApp/Resources;
+			sourceTree = "<group>";
+		};
+		5820209225CB927100A85BAF /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5820204B25CA8BEA00A85BAF /* HomeViewController.swift */,
+				5820209A25CB979000A85BAF /* MenuTableViewCell.swift */,
+				5820209425CB932F00A85BAF /* HomeViewModel.swift */,
+				5820209725CB93A100A85BAF /* HomeMenuModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		582020A325CBB20600A85BAF /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				582020A425CBB20600A85BAF /* FlutterTestViewController.swift */,
+				582020A525CBB20600A85BAF /* FlutterTestViewController.xib */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		F3BB91A0595ADF22DAD0828E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F4DAA13516CED31864695DD /* Pods-ZhouApp.debug.xcconfig */,
+				8F3DB0E2099A19969FC0DA6B /* Pods-ZhouApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4D8F9CCCD18EA52851ADE1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F37E8649C95DC570CB9E0BAD /* Pods_ZhouApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5820204325CA8BEA00A85BAF /* ZhouApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5820205825CA8BEC00A85BAF /* Build configuration list for PBXNativeTarget "ZhouApp" */;
+			buildPhases = (
+				CE06D2ABC6B9312AB1971546 /* [CP] Check Pods Manifest.lock */,
+				197B4F2CB52E69BDD766579C /* [CP-User] Run Flutter Build flutter_module Script */,
+				5820204025CA8BEA00A85BAF /* Sources */,
+				5820204125CA8BEA00A85BAF /* Frameworks */,
+				5820204225CA8BEA00A85BAF /* Resources */,
+				5ADE812C26DBE8AE1387BD29 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZhouApp;
+			productName = ZhouApp;
+			productReference = 5820204425CA8BEA00A85BAF /* ZhouApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5820203C25CA8BEA00A85BAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5820204325CA8BEA00A85BAF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5820203F25CA8BEA00A85BAF /* Build configuration list for PBXProject "ZhouApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5820203B25CA8BEA00A85BAF;
+			productRefGroup = 5820204525CA8BEA00A85BAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5820204325CA8BEA00A85BAF /* ZhouApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5820204225CA8BEA00A85BAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5820205425CA8BEC00A85BAF /* LaunchScreen.storyboard in Resources */,
+				5820205125CA8BEC00A85BAF /* Assets.xcassets in Resources */,
+				582020A725CBB20600A85BAF /* FlutterTestViewController.xib in Resources */,
+				5820206F25CA9BF100A85BAF /* Functions.plist in Resources */,
+				5820204F25CA8BEA00A85BAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		197B4F2CB52E69BDD766579C /* [CP-User] Run Flutter Build flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../flutter_module/.metadata",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		5ADE812C26DBE8AE1387BD29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZhouApp/Pods-ZhouApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZhouApp/Pods-ZhouApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZhouApp/Pods-ZhouApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE06D2ABC6B9312AB1971546 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZhouApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5820204025CA8BEA00A85BAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5820204C25CA8BEA00A85BAF /* HomeViewController.swift in Sources */,
+				5820209825CB93A100A85BAF /* HomeMenuModel.swift in Sources */,
+				5820209B25CB979000A85BAF /* MenuTableViewCell.swift in Sources */,
+				5820204825CA8BEA00A85BAF /* AppDelegate.swift in Sources */,
+				5820204A25CA8BEA00A85BAF /* SceneDelegate.swift in Sources */,
+				5820209525CB932F00A85BAF /* HomeViewModel.swift in Sources */,
+				582020A625CBB20600A85BAF /* FlutterTestViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5820204D25CA8BEA00A85BAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5820204E25CA8BEA00A85BAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5820205225CA8BEC00A85BAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5820205325CA8BEC00A85BAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5820205625CA8BEC00A85BAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5820205725CA8BEC00A85BAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5820205925CA8BEC00A85BAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F4DAA13516CED31864695DD /* Pods-ZhouApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = P6C8BKXGNH;
+				INFOPLIST_FILE = ZhouApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhou.ZhouApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AllDev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5820205A25CA8BEC00A85BAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3DB0E2099A19969FC0DA6B /* Pods-ZhouApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = P6C8BKXGNH;
+				INFOPLIST_FILE = ZhouApp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhou.ZhouApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AllDev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5820203F25CA8BEA00A85BAF /* Build configuration list for PBXProject "ZhouApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5820205625CA8BEC00A85BAF /* Debug */,
+				5820205725CA8BEC00A85BAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5820205825CA8BEC00A85BAF /* Build configuration list for PBXNativeTarget "ZhouApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5820205925CA8BEC00A85BAF /* Debug */,
+				5820205A25CA8BEC00A85BAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5820203C25CA8BEA00A85BAF /* Project object */;
+}
