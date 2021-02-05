@@ -11,7 +11,7 @@ import Flutter
 class FlutterTestViewController: UIViewController {
     
     //初始化的方法
-    var channel:FlutterEventChannel?
+    var methodChannel: MethodChannel?
     var eventSink:FlutterEventSink?
 
     override func viewDidLoad() {
@@ -36,10 +36,19 @@ class FlutterTestViewController: UIViewController {
         let flutterController = FlutterViewController.init(engine: engine, nibName: nil, bundle: nil);
         flutterController.modalPresentationStyle = .fullScreen
         
-        self.channel = FlutterEventChannel(name: "com.pages.flutter", binaryMessenger: flutterController as! FlutterBinaryMessenger)
-                
-        self.channel?.setStreamHandler(self)
+//        self.channel = FlutterEventChannel(name: "com.pages.flutter", binaryMessenger: flutterController as! FlutterBinaryMessenger)
+//                
+//        self.channel?.setStreamHandler(self)
         
+        self.navigationController?.pushViewController(flutterController, animated: true)
+    }
+    
+    @IBAction func testMethodChannel(_ sender: Any) {
+        let engine = FlutterManager.default.engine
+        let flutterController = FlutterViewController.init(engine: engine, nibName: nil, bundle: nil);
+        flutterController.modalPresentationStyle = .fullScreen
+        flutterController.setInitialRoute("testMethodChannel")
+        self.methodChannel = MethodChannel(messenger: flutterController as! FlutterBinaryMessenger)
         self.navigationController?.pushViewController(flutterController, animated: true)
     }
 }

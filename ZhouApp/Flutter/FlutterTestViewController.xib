@@ -18,20 +18,41 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="riw-a0-SBf">
-                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="riw-a0-SBf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="152"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJj-2W-iD2">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="EeF-rf-Utc"/>
                             </constraints>
-                            <state key="normal" title="直接使用FlutterViewController"/>
+                            <state key="normal" title="使用FlutterViewController显示界面"/>
                             <connections>
                                 <action selector="showFlutterViewController:" destination="-1" eventType="touchUpInside" id="SVI-pF-QMh"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vc-kM-hnl">
+                            <rect key="frame" x="0.0" y="51" width="414" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="iyW-VQ-Zot"/>
+                            </constraints>
+                            <state key="normal" title="使用MethodChannel与原生通信"/>
+                            <connections>
+                                <action selector="testMethodChannel:" destination="-1" eventType="touchUpInside" id="rGr-T0-YvQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTw-np-2Hd">
+                            <rect key="frame" x="0.0" y="102" width="414" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fRk-jQ-ebk"/>
+                            </constraints>
+                            <state key="normal" title="直接使用FlutterViewController"/>
+                        </button>
                     </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

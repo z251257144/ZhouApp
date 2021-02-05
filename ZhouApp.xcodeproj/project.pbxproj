@@ -19,6 +19,7 @@
 		582020A625CBB20600A85BAF /* FlutterTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582020A425CBB20600A85BAF /* FlutterTestViewController.swift */; };
 		582020A725CBB20600A85BAF /* FlutterTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582020A525CBB20600A85BAF /* FlutterTestViewController.xib */; };
 		582020BB25CBF4A400A85BAF /* FlutterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582020BA25CBF4A400A85BAF /* FlutterManager.swift */; };
+		58FDB3FD25CD2E5E007BFF71 /* MethodChanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FDB3FC25CD2E5D007BFF71 /* MethodChanel.swift */; };
 		F7EAC687A21E3F9234A139D6 /* Pods_ZhouApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37E8649C95DC570CB9E0BAD /* Pods_ZhouApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		582020A425CBB20600A85BAF /* FlutterTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlutterTestViewController.swift; sourceTree = "<group>"; };
 		582020A525CBB20600A85BAF /* FlutterTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlutterTestViewController.xib; sourceTree = "<group>"; };
 		582020BA25CBF4A400A85BAF /* FlutterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterManager.swift; sourceTree = "<group>"; };
+		58FDB3FC25CD2E5D007BFF71 /* MethodChanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodChanel.swift; sourceTree = "<group>"; };
 		6F4DAA13516CED31864695DD /* Pods-ZhouApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouApp.debug.xcconfig"; path = "Target Support Files/Pods-ZhouApp/Pods-ZhouApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8F3DB0E2099A19969FC0DA6B /* Pods-ZhouApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhouApp.release.xcconfig"; path = "Target Support Files/Pods-ZhouApp/Pods-ZhouApp.release.xcconfig"; sourceTree = "<group>"; };
 		F37E8649C95DC570CB9E0BAD /* Pods_ZhouApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhouApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,8 +115,17 @@
 				582020BA25CBF4A400A85BAF /* FlutterManager.swift */,
 				582020A425CBB20600A85BAF /* FlutterTestViewController.swift */,
 				582020A525CBB20600A85BAF /* FlutterTestViewController.xib */,
+				58FDB3FB25CD2E49007BFF71 /* Channel */,
 			);
 			path = Flutter;
+			sourceTree = "<group>";
+		};
+		58FDB3FB25CD2E49007BFF71 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				58FDB3FC25CD2E5D007BFF71 /* MethodChanel.swift */,
+			);
+			path = Channel;
 			sourceTree = "<group>";
 		};
 		F3BB91A0595ADF22DAD0828E /* Pods */ = {
@@ -268,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				582020BB25CBF4A400A85BAF /* FlutterManager.swift in Sources */,
+				58FDB3FD25CD2E5E007BFF71 /* MethodChanel.swift in Sources */,
 				5820204C25CA8BEA00A85BAF /* HomeViewController.swift in Sources */,
 				5820209825CB93A100A85BAF /* HomeMenuModel.swift in Sources */,
 				5820209B25CB979000A85BAF /* MenuTableViewCell.swift in Sources */,

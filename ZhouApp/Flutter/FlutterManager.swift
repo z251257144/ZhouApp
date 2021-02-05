@@ -22,6 +22,8 @@ class FlutterManager: NSObject {
     /// 初始化Flutter相关
     func initFlutter() {
         self.engine.run()
+//        FlutterPluginRegistrar.register(self.engine)
+//        GeneratedPluginRegistrant.register(with: self)
     }
     
     
