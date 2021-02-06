@@ -36,10 +36,6 @@ class FlutterTestViewController: UIViewController {
         let flutterController = FlutterViewController.init(engine: engine, nibName: nil, bundle: nil);
         flutterController.modalPresentationStyle = .fullScreen
         
-//        self.channel = FlutterEventChannel(name: "com.pages.flutter", binaryMessenger: flutterController as! FlutterBinaryMessenger)
-//                
-//        self.channel?.setStreamHandler(self)
-        
         self.navigationController?.pushViewController(flutterController, animated: true)
     }
     

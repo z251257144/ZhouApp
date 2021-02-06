@@ -7,6 +7,8 @@
 
 import Foundation
 import Flutter
+import FlutterPluginRegistrant
+//import GeneratedPluginRegistrant
 
 class FlutterManager: NSObject {
     
@@ -22,8 +24,7 @@ class FlutterManager: NSObject {
     /// 初始化Flutter相关
     func initFlutter() {
         self.engine.run()
-//        FlutterPluginRegistrar.register(self.engine)
-//        GeneratedPluginRegistrant.register(with: self)
+        GeneratedPluginRegistrant.register(with: self.engine)
     }
     
     

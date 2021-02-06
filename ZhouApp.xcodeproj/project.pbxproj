@@ -153,7 +153,7 @@
 			buildConfigurationList = 5820205825CA8BEC00A85BAF /* Build configuration list for PBXNativeTarget "ZhouApp" */;
 			buildPhases = (
 				CE06D2ABC6B9312AB1971546 /* [CP] Check Pods Manifest.lock */,
-				6DD4463FEC0A941012190E4F /* [CP-User] Run Flutter Build flutter_module Script */,
+				51D065637192434994AFF609 /* [CP-User] Run Flutter Build flutter_module Script */,
 				5820204025CA8BEA00A85BAF /* Sources */,
 				5820204125CA8BEA00A85BAF /* Frameworks */,
 				5820204225CA8BEA00A85BAF /* Resources */,
@@ -216,6 +216,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		51D065637192434994AFF609 /* [CP-User] Run Flutter Build flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../flutter_module/.metadata",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
 		5ADE812C26DBE8AE1387BD29 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,22 +248,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZhouApp/Pods-ZhouApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		6DD4463FEC0A941012190E4F /* [CP-User] Run Flutter Build flutter_module Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../flutter_module/.metadata",
-				"${SRCROOT}/../flutter_module/.ios/Flutter/App.framework/App",
-				"${SRCROOT}/../flutter_module/.ios/Flutter/engine/Flutter.framework/Flutter",
-				"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh",
-			);
-			name = "[CP-User] Run Flutter Build flutter_module Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../flutter_module/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		CE06D2ABC6B9312AB1971546 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

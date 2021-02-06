@@ -58,7 +58,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ZMBaseLib:
-    :commit: 5d7c115410b0a8ef1f3144460791ddf2434b7143
+    :commit: 79fcf200b312963ce41f480173f73dd1792ea6aa
     :git: https://git.dev.tencent.com/z251257144/ZMBaseLibSwift.git
 
 SPEC CHECKSUMS:
@@ -76,4 +76,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ed653dc64de7f4ac9093ca4268e3cc10aa957fba
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
